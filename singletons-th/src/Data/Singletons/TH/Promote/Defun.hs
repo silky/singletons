@@ -1,4 +1,4 @@
-{- Data/Singletons/Promote/Defun.hs
+{- Data/Singletons/TH/Promote/Defun.hs
 
 (c) Richard Eisenberg, Jan Stolarek 2014
 rae@cs.brynmawr.edu
@@ -8,16 +8,16 @@ This file creates defunctionalization symbols for types during promotion.
 
 {-# LANGUAGE TemplateHaskellQuotes #-}
 
-module Data.Singletons.Promote.Defun where
+module Data.Singletons.TH.Promote.Defun where
 
 import Language.Haskell.TH.Desugar
-import Data.Singletons.Promote.Monad
-import Data.Singletons.Promote.Type
-import Data.Singletons.Names
 import Language.Haskell.TH.Syntax
-import Data.Singletons.Syntax
+import Data.Singletons.TH.Names
 import Data.Singletons.TH.Options
-import Data.Singletons.Util
+import Data.Singletons.TH.Promote.Monad
+import Data.Singletons.TH.Promote.Type
+import Data.Singletons.TH.Syntax
+import Data.Singletons.TH.Util
 import Control.Monad
 import qualified Data.Map.Strict as Map
 import Data.Map.Strict (Map)

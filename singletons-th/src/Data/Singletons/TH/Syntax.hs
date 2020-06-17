@@ -1,4 +1,4 @@
-{- Data/Singletons/Syntax.hs
+{- Data/Singletons/TH/Syntax.hs
 
 (c) Richard Eisenberg 2014
 rae@cs.brynmawr.edu
@@ -10,7 +10,7 @@ and contains various other AST definitions.
 {-# LANGUAGE DataKinds, TypeFamilies, PolyKinds, DeriveDataTypeable,
              FlexibleInstances, ConstraintKinds #-}
 
-module Data.Singletons.Syntax where
+module Data.Singletons.TH.Syntax where
 
 import Prelude hiding ( exp )
 import Data.Kind (Constraint, Type)

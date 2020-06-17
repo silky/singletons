@@ -1,4 +1,4 @@
-{- Data/Singletons/Promote.hs
+{- Data/Singletons/TH/Promote.hs
 
 (c) Richard Eisenberg 2013
 rae@cs.brynmawr.edu
@@ -9,7 +9,7 @@ type level. It is an internal module to the singletons-th package.
 
 {-# LANGUAGE MultiWayIf, LambdaCase, TupleSections, ScopedTypeVariables #-}
 
-module Data.Singletons.Promote where
+module Data.Singletons.TH.Promote where
 
 import Language.Haskell.TH hiding ( Q, cxt )
 import Language.Haskell.TH.Syntax ( NameSpace(..), Quasi(..), Uniq )
@@ -18,20 +18,20 @@ import qualified Language.Haskell.TH.Desugar.OMap.Strict as OMap
 import Language.Haskell.TH.Desugar.OMap.Strict (OMap)
 import qualified Language.Haskell.TH.Desugar.OSet as OSet
 import Language.Haskell.TH.Desugar.OSet (OSet)
-import Data.Singletons.Names
-import Data.Singletons.Promote.Monad
-import Data.Singletons.Promote.Defun
-import Data.Singletons.Promote.Type
-import Data.Singletons.Deriving.Eq
-import Data.Singletons.Deriving.Ord
-import Data.Singletons.Deriving.Bounded
-import Data.Singletons.Deriving.Enum
-import Data.Singletons.Deriving.Show
-import Data.Singletons.Deriving.Util
-import Data.Singletons.Partition
+import Data.Singletons.TH.Deriving.Bounded
+import Data.Singletons.TH.Deriving.Enum
+import Data.Singletons.TH.Deriving.Eq
+import Data.Singletons.TH.Deriving.Ord
+import Data.Singletons.TH.Deriving.Show
+import Data.Singletons.TH.Deriving.Util
+import Data.Singletons.TH.Names
 import Data.Singletons.TH.Options
-import Data.Singletons.Util
-import Data.Singletons.Syntax
+import Data.Singletons.TH.Partition
+import Data.Singletons.TH.Promote.Defun
+import Data.Singletons.TH.Promote.Monad
+import Data.Singletons.TH.Promote.Type
+import Data.Singletons.TH.Syntax
+import Data.Singletons.TH.Util
 import Prelude hiding (exp)
 import Control.Applicative (Alternative(..))
 import Control.Arrow (second)

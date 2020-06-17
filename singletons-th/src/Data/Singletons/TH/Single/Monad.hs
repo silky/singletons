@@ -1,4 +1,4 @@
-{- Data/Singletons/Single/Monad.hs
+{- Data/Singletons/TH/Single/Monad.hs
 
 (c) Richard Eisenberg 2014
 rae@cs.brynmawr.edu
@@ -10,7 +10,7 @@ The SgM monad allows reading from a SgEnv environment and is wrapped around a Q.
 
 {-# LANGUAGE GeneralizedNewtypeDeriving, ParallelListComp, TemplateHaskellQuotes #-}
 
-module Data.Singletons.Single.Monad (
+module Data.Singletons.TH.Single.Monad (
   SgM, bindLets, bindContext, askContext, lookupVarE, lookupConE,
   wrapSingFun, wrapUnSingFun,
   singM, singDecsM,
@@ -21,9 +21,9 @@ import Prelude hiding ( exp )
 import Data.Map ( Map )
 import qualified Data.Map as Map
 import Data.Singletons
-import Data.Singletons.Promote.Monad ( emitDecs, emitDecsM )
 import Data.Singletons.TH.Options
-import Data.Singletons.Util
+import Data.Singletons.TH.Promote.Monad ( emitDecs, emitDecsM )
+import Data.Singletons.TH.Util
 import Language.Haskell.TH.Syntax hiding ( lift )
 import Language.Haskell.TH.Desugar
 import Control.Monad.Reader

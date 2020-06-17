@@ -1,4 +1,4 @@
-{- Data/Singletons/Single/Type.hs
+{- Data/Singletons/TH/Single/Type.hs
 
 (c) Richard Eisenberg 2013
 rae@cs.brynmawr.edu
@@ -6,16 +6,16 @@ rae@cs.brynmawr.edu
 Singletonizes types.
 -}
 
-module Data.Singletons.Single.Type where
+module Data.Singletons.TH.Single.Type where
 
 import Language.Haskell.TH.Desugar
 import Language.Haskell.TH.Desugar.OSet (OSet)
 import Language.Haskell.TH.Syntax
-import Data.Singletons.Names
-import Data.Singletons.Single.Monad
-import Data.Singletons.Promote.Type
+import Data.Singletons.TH.Names
 import Data.Singletons.TH.Options
-import Data.Singletons.Util
+import Data.Singletons.TH.Promote.Type
+import Data.Singletons.TH.Single.Monad
+import Data.Singletons.TH.Util
 import Control.Monad
 import Data.Foldable
 import Data.Function

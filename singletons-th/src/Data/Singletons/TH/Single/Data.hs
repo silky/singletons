@@ -1,4 +1,4 @@
-{- Data/Singletons/Single/Data.hs
+{- Data/Singletons/TH/Single/Data.hs
 
 (c) Richard Eisenberg 2013
 rae@cs.brynmawr.edu
@@ -8,19 +8,19 @@ Singletonizes constructors.
 
 {-# LANGUAGE ParallelListComp, TupleSections, LambdaCase #-}
 
-module Data.Singletons.Single.Data where
+module Data.Singletons.TH.Single.Data where
 
 import Language.Haskell.TH.Desugar
 import Language.Haskell.TH.Syntax
-import Data.Singletons.Single.Defun
-import Data.Singletons.Single.Monad
-import Data.Singletons.Single.Type
-import Data.Singletons.Single.Fixity
-import Data.Singletons.Promote.Type
-import Data.Singletons.Util
-import Data.Singletons.Names
-import Data.Singletons.Syntax
+import Data.Singletons.TH.Names
 import Data.Singletons.TH.Options
+import Data.Singletons.TH.Promote.Type
+import Data.Singletons.TH.Single.Defun
+import Data.Singletons.TH.Single.Fixity
+import Data.Singletons.TH.Single.Monad
+import Data.Singletons.TH.Single.Type
+import Data.Singletons.TH.Syntax
+import Data.Singletons.TH.Util
 import Control.Monad
 
 -- We wish to consider the promotion of "Rep" to be *

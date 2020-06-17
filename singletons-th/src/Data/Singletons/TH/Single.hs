@@ -1,4 +1,4 @@
-{- Data/Singletons/Single.hs
+{- Data/Singletons/TH/Single.hs
 
 (c) Richard Eisenberg 2013
 rae@cs.brynmawr.edu
@@ -8,32 +8,32 @@ types. It is an internal module to the singletons-th package.
 -}
 {-# LANGUAGE TemplateHaskellQuotes, TupleSections, ParallelListComp #-}
 
-module Data.Singletons.Single where
+module Data.Singletons.TH.Single where
 
 import Prelude hiding ( exp )
 import Language.Haskell.TH hiding ( cxt )
 import Language.Haskell.TH.Syntax (NameSpace(..), Quasi(..))
-import Data.Singletons.Deriving.Eq
-import Data.Singletons.Deriving.Ord
-import Data.Singletons.Deriving.Bounded
-import Data.Singletons.Deriving.Enum
-import Data.Singletons.Deriving.Show
-import Data.Singletons.Deriving.Util
-import Data.Singletons.Util
-import Data.Singletons.Promote
-import Data.Singletons.Promote.Defun
-import Data.Singletons.Promote.Monad ( promoteM )
-import Data.Singletons.Promote.Type
-import Data.Singletons.Names
-import Data.Singletons.Single.Monad
-import Data.Singletons.Single.Type
-import Data.Singletons.Single.Data
-import Data.Singletons.Single.Decide
-import Data.Singletons.Single.Defun
-import Data.Singletons.Single.Fixity
-import Data.Singletons.Syntax
+import Data.Singletons.TH.Deriving.Bounded
+import Data.Singletons.TH.Deriving.Enum
+import Data.Singletons.TH.Deriving.Eq
+import Data.Singletons.TH.Deriving.Ord
+import Data.Singletons.TH.Deriving.Show
+import Data.Singletons.TH.Deriving.Util
+import Data.Singletons.TH.Names
 import Data.Singletons.TH.Options
-import Data.Singletons.Partition
+import Data.Singletons.TH.Partition
+import Data.Singletons.TH.Promote
+import Data.Singletons.TH.Promote.Defun
+import Data.Singletons.TH.Promote.Monad ( promoteM )
+import Data.Singletons.TH.Promote.Type
+import Data.Singletons.TH.Single.Data
+import Data.Singletons.TH.Single.Decide
+import Data.Singletons.TH.Single.Defun
+import Data.Singletons.TH.Single.Fixity
+import Data.Singletons.TH.Single.Monad
+import Data.Singletons.TH.Single.Type
+import Data.Singletons.TH.Syntax
+import Data.Singletons.TH.Util
 import Language.Haskell.TH.Desugar
 import qualified Language.Haskell.TH.Desugar.OMap.Strict as OMap
 import Language.Haskell.TH.Desugar.OMap.Strict (OMap)

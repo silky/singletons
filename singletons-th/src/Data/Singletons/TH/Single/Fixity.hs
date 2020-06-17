@@ -1,11 +1,11 @@
 {-# LANGUAGE ScopedTypeVariables #-}
-module Data.Singletons.Single.Fixity where
+module Data.Singletons.TH.Single.Fixity where
 
 import Prelude hiding ( exp )
 import Language.Haskell.TH hiding ( cxt )
 import Language.Haskell.TH.Syntax (NameSpace(..), Quasi(..))
 import Data.Singletons.TH.Options
-import Data.Singletons.Util
+import Data.Singletons.TH.Util
 import Language.Haskell.TH.Desugar
 
 -- Single a fixity declaration.

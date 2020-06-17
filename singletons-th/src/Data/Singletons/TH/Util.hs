@@ -1,4 +1,4 @@
-{- Data/Singletons/Util.hs
+{- Data/Singletons/TH/Util.hs
 
 (c) Richard Eisenberg 2013
 rae@cs.brynmawr.edu
@@ -13,7 +13,7 @@ Users of the package should not need to consult this file.
              NoMonomorphismRestriction, ScopedTypeVariables,
              FlexibleContexts #-}
 
-module Data.Singletons.Util where
+module Data.Singletons.TH.Util where
 
 import Prelude hiding ( exp, foldl, concat, mapM, any, pred )
 import Language.Haskell.TH ( pprint )

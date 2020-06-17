@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------
 -- |
--- Module      :  Data.Singletons.Partition
+-- Module      :  Data.Singletons.TH.Partition
 -- Copyright   :  (C) 2015 Richard Eisenberg
 -- License     :  BSD-style (see LICENSE)
 -- Maintainer  :  Ryan Scott
@@ -14,27 +14,27 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TupleSections #-}
 
-module Data.Singletons.Partition where
+module Data.Singletons.TH.Partition where
 
 import Prelude hiding ( exp )
-import Data.Singletons.Syntax
-import Data.Singletons.Deriving.Ord
-import Data.Singletons.Deriving.Bounded
-import Data.Singletons.Deriving.Enum
-import Data.Singletons.Deriving.Eq
-import Data.Singletons.Deriving.Foldable
-import Data.Singletons.Deriving.Functor
-import Data.Singletons.Deriving.Show
-import Data.Singletons.Deriving.Traversable
-import Data.Singletons.Deriving.Util
-import Data.Singletons.Names
+import Data.Singletons.TH.Deriving.Bounded
+import Data.Singletons.TH.Deriving.Enum
+import Data.Singletons.TH.Deriving.Eq
+import Data.Singletons.TH.Deriving.Foldable
+import Data.Singletons.TH.Deriving.Functor
+import Data.Singletons.TH.Deriving.Ord
+import Data.Singletons.TH.Deriving.Show
+import Data.Singletons.TH.Deriving.Traversable
+import Data.Singletons.TH.Deriving.Util
+import Data.Singletons.TH.Names
 import Data.Singletons.TH.Options
+import Data.Singletons.TH.Syntax
+import Data.Singletons.TH.Util
 import Language.Haskell.TH.Syntax hiding (showName)
 import Language.Haskell.TH.Ppr
 import Language.Haskell.TH.Desugar
 import qualified Language.Haskell.TH.Desugar.OMap.Strict as OMap
 import Language.Haskell.TH.Desugar.OMap.Strict (OMap)
-import Data.Singletons.Util
 
 import Control.Monad
 import Data.Bifunctor (bimap)
