@@ -20,7 +20,7 @@ extra-source-files: README.md, CHANGES.md, tests/README.md,
                     tests/compile-and-dump/Singletons/*.golden
 license:        BSD3
 license-file:   LICENSE
-build-type:     Custom
+build-type:     Simple
 description:
     @singletons-base@ uses @singletons-th@ to define promoted and singled
     functions from the @base@ library, including the "Prelude". This library was
